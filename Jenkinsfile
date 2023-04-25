@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages { 
-        stage('Testing') {
+        stage('working with variable') {
             steps {
               script {
                   a = 10
