@@ -5,7 +5,7 @@ pipeline {
             steps {
               script {
                   a = 10
-                  println 'my variable value is ${a}'
+                  println "my variable value is ${a}"
               }
             }
         }
