@@ -12,12 +12,8 @@ pipeline {
                   println "my build no is ${BUILD_NUMBER}"
                   println "select parameter is ${params.ENV}"
                   
-                  input {
-  message 'ENTER BATCH NO'
-  parameters {
-    string defaultValue: '1', name: 'BATCHNO', trim: true
-  }
-                      println "my batch no is ${BATCHNO}"
+                  input message: 'ENTER BATCHNO', parameters: [string(name: 'BATCHNO', trim: true)]
+                  println "my batch no is ${BATCHNO}"
               }
             }
         }
