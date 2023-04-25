@@ -4,7 +4,8 @@ pipeline {
         stage('Testing') {
             steps {
               script {
-                println 'Hi team welcome to jenkins pipeline'
+                  a = 10
+                  println 'my variable value is ${a}'
               }
             }
         }
